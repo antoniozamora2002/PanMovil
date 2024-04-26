@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:backgroundTint="#B71C1C"
-        android:text="Verificar"
+        android:text="Enviar"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"

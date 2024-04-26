@@ -61,7 +61,6 @@ public class ProductDetailsActivity extends AppCompatActivity {
         priceTextView = findViewById(R.id.precioproTextView);
         imageproView = findViewById(R.id.imageproView);
         btnresenha = findViewById(R.id.Btnresena);
-        //BtnEditar = findViewById(R.id.buttonEditar);
 
         // Obtener extras del Intent
         Intent intent = getIntent();

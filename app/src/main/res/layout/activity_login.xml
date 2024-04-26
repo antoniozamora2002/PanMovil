@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:onClick="RecuperarContrasena"
-        android:text="Olvide mi contraseña"
+        android:text="Recuperar usuario"
         android:textColor="#181818"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -127,7 +127,7 @@ public class ProductosPanesActivity extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 try {
                     int totalRegistros = response.getInt("Total de registros");
-                    Toast.makeText(getApplicationContext(), "es: " + totalRegistros, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "es: " + totalRegistros, Toast.LENGTH_SHORT).show();
 
                     for (int i = 0; i < totalRegistros; i++) {
                         String valor = response.get("Detalle").toString();

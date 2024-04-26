@@ -16,13 +16,16 @@
         android:theme="@style/Theme.PanMovil_PanitasProject"
         tools:targetApi="31">
         <activity
+            android:name=".CodigoActivity"
+            android:exported="false" />
+        <activity
             android:name=".VerificarCorreoActivity"
             android:exported="false" />
         <activity
             android:name=".EditarResenaActivity"
             android:exported="false" />
         <activity
-            android:name=".RecuperarPasswordActivity"
+            android:name=".RecuperarCuentaActivity"
             android:exported="false" />
         <activity
             android:name=".ProductPostresActivity"

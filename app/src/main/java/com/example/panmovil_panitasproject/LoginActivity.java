@@ -13,8 +13,6 @@ import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.panmovil_panitasproject.conexionApi.ConexionApi;
@@ -100,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void RecuperarContrasena(View view){
-        Intent recuperarPass = new Intent(this, RecuperarPasswordActivity.class);
+        Intent recuperarPass = new Intent(this, RecuperarCuentaActivity.class);
         startActivity(recuperarPass);
     }
 

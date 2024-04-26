@@ -51,7 +51,7 @@ public class VerificarCorreoActivity extends AppCompatActivity {
 
         String verificationCodeString = String.valueOf(verificationCode);
 
-        sendEmail(correo, "Número de verficación de cuenta.", verificationCodeString);
+        sendEmail(correo, "Número de verficación de cuenta.", "Tu código de verificación es: " + verificationCodeString);
 
 
         btnVerificar.setOnClickListener(new View.OnClickListener() {
