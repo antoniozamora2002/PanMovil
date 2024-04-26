@@ -143,17 +143,4 @@ public class VerificarCorreoActivity extends AppCompatActivity {
         sendTask.execute();
     }
 
-    /*private void verificarCodigo(View view) {
-        String enteredCode = NumberRandom.getText().toString();
-
-        if (enteredCode.equals(String.valueOf(verificationCode))) {
-            // El código ingresado es correcto
-            RegistroActivity registro = new RegistroActivity();
-            registro.Registraruser(view);  // Pasa la vista actual al método Registraruser
-            //MainAct();
-        } else {
-            Toast.makeText(getApplicationContext(), "Número incorrecto", Toast.LENGTH_SHORT).show();
-        }
-    }*/
-
 }
