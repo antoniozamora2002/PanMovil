@@ -5,6 +5,7 @@ import static android.widget.Toast.LENGTH_LONG;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -40,8 +41,6 @@ public class CambiarContrasena extends AppCompatActivity {
     private EditText txtPassword;
     private EditText txtPassword2;
     RequestQueue requestQueue;
-    private TextView passView;
-
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -56,7 +55,6 @@ public class CambiarContrasena extends AppCompatActivity {
         txtPassword2 = findViewById(R.id.editTextPassword2);
 
         requestQueue = Volley.newRequestQueue(this);
-        passView = findViewById(R.id.textViewSetPassword);
 
         // Obtener el SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
@@ -81,14 +79,15 @@ public class CambiarContrasena extends AppCompatActivity {
 
         if(!password.equals(password2)){
             Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+            return;
         }
 
         // Realizar el metodo PUT, apara actualizar la contraseña
         String url = ConexionApi.URL_BASE + "Usuariosmovil/actualizarcontrasena/" + id;
 
         Map<String, String> params = new HashMap<>();
-        params.put("usumo_Contrasena", password);
-        Log.d("Password Value", password);
+        params.put("usumo_Contrasena", password2);
+        Log.d("Password Value", password2);
 
 
         String requestBody = getEncodedParams2(params);
@@ -102,6 +101,7 @@ public class CambiarContrasena extends AppCompatActivity {
                             int status = jsonResponse.getInt("Status");
                             if (status == 200) {
                                 Toast.makeText(getApplicationContext(), "Contraseña actualizada exitosamente", Toast.LENGTH_SHORT).show();
+                                LoginActivity();
                             } else {
                                 Toast.makeText(getApplicationContext(), "Error al actualizar la contraseña", Toast.LENGTH_SHORT).show();
                             }
@@ -136,7 +136,11 @@ public class CambiarContrasena extends AppCompatActivity {
             public String getBodyContentType() {
                 return "application/x-www-form-urlencoded";
             }
+
         };
+
+        // llamar el metodo PUT, aplicarlo en el request
+        requestQueue.add(putRequest);
 
     }
 
@@ -156,4 +160,10 @@ public class CambiarContrasena extends AppCompatActivity {
         }
         return sb.toString();
     }
+
+    private void  LoginActivity(){
+        Intent loginAct = new Intent(this, LoginActivity.class);
+        startActivity(loginAct);
+    }
+
 }
