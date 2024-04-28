@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        String url = ConexionApi.URL_BASE + "usuariosmovil/" + mail + "&" + password;
+        String url = ConexionApi.URL_BASE + "Usuariosmovil/login/" + mail + "/" + password;
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,

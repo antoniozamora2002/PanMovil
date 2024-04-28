@@ -29,7 +29,6 @@ public class VerificarCorreoActivity extends AppCompatActivity {
     private TextView MailUser;
     private EditText NumberRandom;
     private Button btnVerificar, btnRandom;
-
     private int verificationCode;  // Declarar la variable a nivel de clase
 
     @Override
@@ -58,11 +57,6 @@ public class VerificarCorreoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String enteredCode = NumberRandom.getText().toString();
-
-                //verificarCodigo(view);
-                /*RegistroActivity registro = new RegistroActivity();
-
-                registro.Registraruser(view);*/
 
                 if (enteredCode.equals(String.valueOf(verificationCode))) {
 

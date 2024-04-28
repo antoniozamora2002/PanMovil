@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -66,8 +67,13 @@ public class RecuperarCuentaActivity extends AppCompatActivity {
         final String mail = emailEditText.getText().toString().trim();
         final String phone = phoneEditText.getText().toString().trim();
 
+        if(mail.isEmpty() || phone.isEmpty()){
+            Toast.makeText(this, "Por favor ingrese los datos", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // Realizar la solicitud GET para verificar si el correo está registrado
-        String url = ConexionApi.URL_BASE + "usuariosmovil/" + phone + "&" + mail + "&recuperarcontrasena";
+        String url = ConexionApi.URL_BASE + "Usuariosmovil/buscaremail/" + mail + "/" + phone;
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
@@ -82,24 +88,36 @@ public class RecuperarCuentaActivity extends AppCompatActivity {
 
                             JSONObject objeto = new JSONObject(arreglo.get(0).toString());
 
+                            String id = objeto.getString("usumo_id");
                             String correo = objeto.getString("usumo_Correo");
                             String celular = objeto.getString("usumo_telefono");
+
 
                             // Si el correo está registrado, enviar el correo de recuperación
                             if (correo.equals(mail) && celular.equals(phone)) {
                                 // Generar el código de recuperación
                                 Random random = new Random();
                                 int codigoAleatorio = random.nextInt(9000) + 1000; // Genera un número aleatorio de 4 dígitos
-
                                 String codigo = String.valueOf(codigoAleatorio);
 
                                 // Enviar el correo de recuperación con el código
                                 sendEmail(mail, "Recuperar cuenta", "Tu código es: " + codigo);
-                                CodigoAct();
+
+                                // Enviar los datos al cambiarContrasena
+                                SharedPreferences sharedPreferences = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                // Guardar los valores
+                                editor.putString("id", id);
+                                editor.putString("correo", correo);
+                                editor.putString("celular", celular);
+                                // Aplicar los cambios
+                                editor.apply();
+
+                                CodigoAct(codigo);
 
                             } else {
                                 // Si el correo no está registrado, mostrar un mensaje al usuario
-                                Toast.makeText(RecuperarCuentaActivity.this, "El correo electrónico no está registrado.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RecuperarCuentaActivity.this, "El usuario no está registrado.", Toast.LENGTH_SHORT).show();
                             }
 
                         } catch (JSONException e) {
@@ -180,8 +198,9 @@ public class RecuperarCuentaActivity extends AppCompatActivity {
         sendTask.execute();
     }
 
-    public void CodigoAct(){
+    public void CodigoAct(String codigo){
         Intent codigoact = new Intent(this, CodigoActivity.class);
+        codigoact.putExtra("codigo", codigo);
         startActivity(codigoact);
     }
 

@@ -120,12 +120,10 @@ public class RegistroActivity extends AppCompatActivity {
             jsonBody.put("usumo_correo", mailTxt.getText().toString());
             jsonBody.put("usumo_contrasena", passwordconfirmTxt.getText().toString());
             jsonBody.put("usumo_telefono", phoneTxt.getText().toString());
-            //jsonBody.put("cl_id", cliTxt.getText().toString());
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.POST, url, jsonBody,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -135,8 +133,6 @@ public class RegistroActivity extends AppCompatActivity {
                         try {
                             int totalRegistros = response.getInt("Total de registros");
                             Toast.makeText(getApplicationContext(), "es: " + totalRegistros, Toast.LENGTH_SHORT).show();
-
-                            // Resto de tu código aquí...
 
                         } catch (JSONException e) {
                             e.printStackTrace();

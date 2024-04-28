@@ -16,6 +16,9 @@
         android:theme="@style/Theme.PanMovil_PanitasProject"
         tools:targetApi="31">
         <activity
+            android:name=".CambiarContrasena"
+            android:exported="false" />
+        <activity
             android:name=".CodigoActivity"
             android:exported="false" />
         <activity

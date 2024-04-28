@@ -45,7 +45,6 @@ public class ResenhaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resenha);
 
-
         nameProductTextView = findViewById(R.id.textViewNameProduct);
         idproduct = findViewById(R.id.textViewProductId);
         usuario = findViewById(R.id.TextViewUser);
@@ -80,12 +79,6 @@ public class ResenhaActivity extends AppCompatActivity {
                 ratingText.setText(String.valueOf(rating));
             }
         });
-
-
-
-
-
-
     }
 
     public void MainAct(View view){
