@@ -1,0 +1,13 @@
+
+?
+java:S1604€"(Make this anonymous inner class a lambda(ÑÂð
+>
+java:S1604Ž"(Make this anonymous inner class a lambda(–§º
+c	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÆ¾â
+A
+java:S11727"+Remove this unused method parameter "view".(ÅÆ¾â
+C
+java:S1172<"-Remove this unused method parameter "correo".(Úýáè
+c	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ ¨Ç
+A
+java:S1172A"+Remove this unused method parameter "view".(¼ ¨Ç

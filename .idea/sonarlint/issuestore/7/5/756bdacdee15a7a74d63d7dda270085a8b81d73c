@@ -1,0 +1,8 @@
+
+>
+java:S1604-"(Make this anonymous inner class a lambda(Ö¹™º
+k	java:S116F"VRename this field "IdTextView2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Àù
+^
+java:S1659F"HDeclare "IdTextView2" and all following declarations on a separate line.(„Àù
+B
+java:S1068",Remove this unused "inflater" private field.(Ÿ†õ

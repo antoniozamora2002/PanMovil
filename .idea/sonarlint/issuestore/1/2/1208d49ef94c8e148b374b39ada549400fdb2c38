@@ -1,0 +1,15 @@
+
+i
+java:S1604`"(Make this anonymous inner class a lambda(±æÿÚıÿÿÿÿJ$2c9ea972-fcdd-4d7d-ae7f-4e18e0d720e7
+c
+java:S1604r"(Make this anonymous inner class a lambda(–§ºJ$c63fc086-341b-4a6e-b619-e97e1edbf830
+™
+java:S1450&"XRemove the "btnEnviar" field and declare it as a local variable in the relevant methods.(Ş­¾øÿÿÿÿJ$be6a683b-d311-435f-86f7-fb926c14b4e2
+˜
+java:S1450("\Remove the "txtViewCorreo" field and declare it as a local variable in the relevant methods.(ƒÚ‰®J$0d85906a-1682-4286-8825-52ab34760e14
+	java:S100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡…ÚØıÿÿÿÿJ$925ed4fb-aa6a-49aa-aee3-64460810d125
+l
+java:S1172F"+Remove this unused method parameter "view".(¡…ÚØıÿÿÿÿJ$24ca446f-15ae-4723-8dd3-946334d86694
+	java:S100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ­›øùÿÿÿÿJ$3755e79a-878a-493d-8745-cafe68664e40
+n
+java:S1068&"-Remove this unused "btnEnviar" private field.(Ş­¾øÿÿÿÿJ$f6ab6659-d739-4c2d-8e78-a2e7986df570

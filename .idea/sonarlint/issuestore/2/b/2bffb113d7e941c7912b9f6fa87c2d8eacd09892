@@ -1,0 +1,31 @@
+
+>
+java:S16049"(Make this anonymous inner class a lambda(‚úé¯
+>
+java:S1604R"(Make this anonymous inner class a lambda(ÑÂğ
+>
+java:S1604"(Make this anonymous inner class a lambda(–§º
+D
+java:S1604«"(Make this anonymous inner class a lambda(˜ã¯şÿÿÿÿ
+D
+java:S1604´"(Make this anonymous inner class a lambda(˜ã¯şÿÿÿÿ
+F
+java:S1659)"+Declare "phoneEditText" on a separate line.(ù’ß½ıÿÿÿÿ
+p
+java:S1450*"ZRemove the "resetButton" field and declare it as a local variable in the relevant methods.(ó×•¨
+b	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùåÜ?
+3
+java:S2119c"Save and re-use this "Random".(¼İÅf
+M
+java:S1874"1Remove this use of "AsyncTask"; it is deprecated.(ÉÙ‰ ıÿÿÿÿ
+J
+java:S1874".Remove this use of "<init>"; it is deprecated.(ÉÙ‰ ıÿÿÿÿ
+Q
+java:S1161":Add the "@Override" annotation above this method signature(‡èú×
+f
+java:S1874À"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Û¶…óøÿÿÿÿ
+L
+java:S1874Á"5Remove this use of "onPostExecute"; it is deprecated.(¹ï•é
+K
+java:S1874Æ"/Remove this use of "execute"; it is deprecated.(»Ü°«øÿÿÿÿ
+i	java:S100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÔªúÿÿÿÿ
