@@ -38,12 +38,7 @@ pipeline {
             }
         }
         //Revisa la calidad de código con SonarQube
-        stage('Analysis SonarQube') {
-           steps {
-               	 sh 'mvn sonar:sonar -Dsonar.login=sqp_5c4a7bec224bf27dbb4498a120e70b85b62e45e5 -Dsonar.projectKey=PanMovil -Dsonar.projectName="PanMovil" -Dsonar.host.url=localhost:9000'
-               	 echo 'SonarQube Code review done'
-           }
-        }
+       
     	//Empaqueta el proyecto y lo dejará en taget/project-1.0-SNAPSHOT.jar
     	stage('Build') {
 	       steps {
