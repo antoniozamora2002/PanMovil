@@ -1,17 +1,15 @@
 pipeline {
 	agent any
-	node {
+	
+	stages {
 		stage('SCM') {
-			checkout scm
+		checkout scm
 		}
 		stage('SonarQube Analysis') {
 			withSonarQubeEnv() {
 			sh "./gradlew sonar"
 			}
 		}
-	}
-	
-	stages {
 	    stage('Preparation') {
     	   steps {
    	      		git 'https://github.com/antoniozamora2002/PanMovil.git'
