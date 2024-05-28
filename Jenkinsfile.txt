@@ -2,9 +2,6 @@ pipeline {
 	agent any
 	
 	stages {
-		stage('SCM') {
-		checkout scm
-		}
 	
 	    stage('Preparation') {
     	   steps {
@@ -27,7 +24,7 @@ pipeline {
    	    	}
     	}
     	//Revisa la calidad de código
-    	stage('Code review to check quality of code'){
+    	stage('Code review to check quality of code') {
             steps{
                 sh 'mvn pmd:pmd'
                 echo 'Code review done'
