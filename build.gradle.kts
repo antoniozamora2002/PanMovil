@@ -18,3 +18,4 @@ sonar {
     property("sonar.projectKey", "PanMovil")
     property("sonar.projectName", "PanMovil")
   }
+}
