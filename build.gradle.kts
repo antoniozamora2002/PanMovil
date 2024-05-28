@@ -15,7 +15,6 @@ plugins {
     //}
 sonar {
   properties {
-    property "sonar.projectKey", "PanMovil"
-    property "sonar.projectName", "PanMovil"
+    property("sonar.projectKey", "PanMovil")
+    property("sonar.projectName", "PanMovil")
   }
-}
