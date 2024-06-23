@@ -5,7 +5,8 @@ plugins {
 }
 sonar {
   properties {
-    property("sonar.projectKey", "PanMovil")
-    property("sonar.projectName", "PanMovil")
+    property("sonar.projectKey", "sadasd")
+    property("sonar.host.url", "http://ec2-52-87-8-79.compute-1.amazonaws.com:9000")
+    property("sonar.token", "squ_83076f2e1ac351f95cbbe16d427d3bd387cfd8d0")
   }
 }
