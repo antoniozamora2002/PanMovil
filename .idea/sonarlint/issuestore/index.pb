@@ -23,3 +23,9 @@ Qapp/src/main/java/com/example/panmovil_panitasproject/ProductosPanesActivity.ja
 ^app/src/main/java/com/example/panmovil_panitasproject/recycleadapter/ProductoPanesAdapter.java,7\e\7e6eb109f2462743031d9340f6f6dc96cf146d04
 ê
 `app/src/main/java/com/example/panmovil_panitasproject/recycleadapter/ProductoPostresAdapter.java,7\5\756bdacdee15a7a74d63d7dda270085a8b81d73c
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+z
+Japp/src/test/java/com/example/panmovil_panitasproject/ExampleUnitTest.java,8\f\8f2ad2fd3dc6ed8aaa79c92af0d8e31fae1a9a80
+{
+Kapp/src/main/java/com/example/panmovil_panitasproject/modulos/Products.java,1\c\1c63a999398b1be3d5faec34f99b75327590e2cc

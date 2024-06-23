@@ -46,25 +46,26 @@ sonarqube {
 }
 
 dependencies {
-
     /*implementation ("androidx.activity:activity:1.3.1")*/
 
-    implementation ("com.squareup.picasso:picasso:2.71828")
-
-    implementation ("com.android.volley:volley:1.2.1")
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("com.android.volley:volley:1.2.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     // Para enviar correos electrónicos en una aplicación Android
-    implementation ("com.sun.mail:android-mail:1.6.7")
-    implementation ("com.sun.mail:android-activation:1.6.7")
-    implementation ("com.airbnb.android:lottie:3.4.0") /*ANIMACIONES*/
+    implementation("com.sun.mail:android-mail:1.6.7")
+    implementation("com.sun.mail:android-activation:1.6.7")
+    implementation("com.airbnb.android:lottie:3.4.0") /*ANIMACIONES*/
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    // La lógica de envío de correo en tu actividad
-    implementation ("com.sun.mail:android-mail:1.6.7")
-    implementation ("com.sun.mail:android-activation:1.6.7")
-    implementation ("com.google.code.gson:gson:2.9.1")
+    implementation("com.google.code.gson:gson:2.9.1")
     implementation("androidx.gridlayout:gridlayout:1.0.0") /* FORMATO JSON */
+
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+    testImplementation("org.mockito:mockito-core:4.0.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:4.0.0")
+
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

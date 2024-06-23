@@ -1,15 +1,18 @@
 
-jkotlin:S66244" Do not hardcode version numbers.(Ã•€øÿÿÿÿÿ8Œ°Š¹ò1J$0dc5167e-c9d0-457a-b551-b842e1e4df92
-jkotlin:S66246" Do not hardcode version numbers.(éªş¨ûÿÿÿÿ8Œ°Š¹ò1J$6733cffe-57c8-481f-9714-e23dc95f0144
-jkotlin:S66247" Do not hardcode version numbers.(Î¹×•ÿÿÿÿÿ8Œ°Š¹ò1J$47b07e08-f79f-4413-b8c4-82046ac89650
-ekotlin:S66248" Do not hardcode version numbers.(è™ƒ¼8Œ°Š¹ò1J$66139da1-f04e-4e0f-b55c-8df897b57b1b
-jkotlin:S6624:" Do not hardcode version numbers.(‚÷¡±úÿÿÿÿ8°Š¹ò1J$8e220218-4ccd-45c4-ae03-18eadcfb5ac2
-jkotlin:S6624;" Do not hardcode version numbers.(„Á»£ıÿÿÿÿ8°Š¹ò1J$92405e2d-12f5-4890-8db9-29cfdb3a576d
-ekotlin:S6624<" Do not hardcode version numbers.(Í©8°Š¹ò1J$d3b6c6ae-bbda-4545-93d5-4f85a090eaab
-jkotlin:S6624=" Do not hardcode version numbers.(Œ¹Š’ıÿÿÿÿ8°Š¹ò1J$e124400b-a18d-4e87-a305-dc1b4e782f03
-jkotlin:S6624?" Do not hardcode version numbers.(‚÷¡±úÿÿÿÿ8°Š¹ò1J$41af1e32-155d-44c6-a406-8ad38ed344a3
-jkotlin:S6624@" Do not hardcode version numbers.(„Á»£ıÿÿÿÿ8°Š¹ò1J$f35c6783-78a4-4e4f-956a-33dc68725f3b
-ekotlin:S6624A" Do not hardcode version numbers.(ŒìİÀ8°Š¹ò1J$e08af02e-9c94-40f2-bdb4-97d82eb32dc8
-ekotlin:S6624B" Do not hardcode version numbers.(Õ¸Ì…8°Š¹ò1J$bcb0463f-182d-4a9d-b0fa-d9c1e880096f
-jkotlin:S6624C" Do not hardcode version numbers.(˜°Ö“üÿÿÿÿ8°Š¹ò1J$8bc1181f-ba92-4ec7-b36d-96fc792459eb
-›secrets:S6702*"PMake sure this SonarQube token gets revoked, changed, and removed from the code.(™àœøÿÿÿÿ8³èë¹ò1J$dc5e735f-9fab-409f-bdd2-0dc1406c0a99
+Dkotlin:S66243" Do not hardcode version numbers.(Ã•€øÿÿÿÿÿ8›¡¹„2
+Dkotlin:S66244" Do not hardcode version numbers.(éªş¨ûÿÿÿÿ8œ¡¹„2
+Dkotlin:S66245" Do not hardcode version numbers.(Î¹×•ÿÿÿÿÿ8¡¹„2
+?kotlin:S66246" Do not hardcode version numbers.(è™ƒ¼8¡¹„2
+Dkotlin:S66248" Do not hardcode version numbers.(‚÷¡±úÿÿÿÿ8¡¹„2
+Dkotlin:S66249" Do not hardcode version numbers.(„Á»£ıÿÿÿÿ8¡¹„2
+?kotlin:S6624:" Do not hardcode version numbers.(Í©8¡¹„2
+Dkotlin:S6624;" Do not hardcode version numbers.(Œ¹Š’ıÿÿÿÿ8Ÿ¡¹„2
+?kotlin:S6624<" Do not hardcode version numbers.(ŒìİÀ8Ÿ¡¹„2
+?kotlin:S6624=" Do not hardcode version numbers.(Õ¸Ì…8 ¡¹„2
+Dkotlin:S6624?" Do not hardcode version numbers.(˜°Ö“üÿÿÿÿ8¡¡¹„2
+?kotlin:S6624@" Do not hardcode version numbers.(œ²™¹8¡¡¹„2
+Dkotlin:S6624A" Do not hardcode version numbers.(Ã‰¤şÿÿÿÿ8¢¡¹„2
+Dkotlin:S6624B" Do not hardcode version numbers.(Î²‘¢ùÿÿÿÿ8¢¡¹„2
+?kotlin:S6624C" Do not hardcode version numbers.(¸ú‘ù8¢¡¹„2
+rkotlin:S66290"(Group dependencies by their destination.(«±°¢ùÿÿÿÿ8®Ÿ…¹„2J$0c680074-3a60-4e55-b9e4-9876f9a834b1
+›secrets:S6702*"PMake sure this SonarQube token gets revoked, changed, and removed from the code.(™àœøÿÿÿÿ8³èë¹ò1J$f8c6d824-f287-4b54-8743-c8a4e222c9f9
